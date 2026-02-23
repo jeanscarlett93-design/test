@@ -87,6 +87,17 @@ button:hover {
   gap: 14px;
 }
 
+.answers-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.answers-two-col button {
+  width: 100%;
+  margin-top: 0;
+}
+
 /* Layout 2 – vertikal untereinander */
 .answers-vertical {
   display: flex;
@@ -377,6 +388,7 @@ text: "What is the most irritating emoji to use?",
 
     {
     text: "Playing the classic 2002 video game 'Barbies Zauberhafte Pferdewelt' ('Barbie Riding Club'), how do you name your horse?",
+    layout: "two-col",
     answers: [
       { text: "*+:｡.｡-𝘉ไίť𝘻-｡.｡:+*", points: { "Anakin Skywalker": 1, "Blitz": 2, "Smoky": 2 } },
       { text: "°🫧•𖨆٭ 𝒃ü𝒕𝒕ᶓ𝘳𝒃ʅü𐌼ᶓ꙳○𖨆°", points: { "Knirpsi": 1, "Nelkenheini": 1 } },
@@ -577,7 +589,7 @@ function showQuestion() {
     questionEl.appendChild(h1);
   }
 
-  // 👉 Antworten: Grid wenn Bilder
+// 👉 Antworten Layout
 const hasImages = q.answers.some(a => a.image);
 
 if (hasImages) {
@@ -586,7 +598,11 @@ if (hasImages) {
   } else {
     answersEl.className = "answers-grid";
   }
-} else {
+} 
+else if (q.layout === "two-col") {
+  answersEl.className = "answers-two-col";
+} 
+else {
   answersEl.className = "";
 }
 
