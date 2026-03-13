@@ -153,7 +153,7 @@ button:hover {
 
     In the land of Germany, you can't just do anything you want, like calling your daughter after your favorite football club. But lets imagine a world where this is possible, a <b>better world</b>... <br><br>
     After taking this thoughtfully prepared evaluation of your character and <b>deepest desires</b>, you will find out your true name. Then and only then you'll have the last puzzle piece to your personality the last step to a total and complete self image, the core of the onion, <b>YOUR onion</b>. <br><br>
-    Some of these <b>15 questions</b> may seem weird to you, maybe even <i>barely comprehensible</i>. Fear not young traveler of the internet, you'll have to persist and trust your instinct, so you shall <b>find truth</b>! The only truth that matters, the truth to rule all other truths and bind them and <b>kill them</b>! Are you ready, are you brave? It doesn't really matter, it's just a test on the internet, you can be unfinished and <b>weak</b>, and still manage to click through a couple of questions. This text goes on and on and each word in it is less and less <b>relevant</b>. You'll learn nothing from reading the rest of it, just click the button, to learn your new name from now on! Click traveler click, your time on earth is running out, and you can no longer go one step without knowing your true and only name, <b>which you shall be known as from now on</b>.
+    Some of these <b>18 questions</b> may seem weird to you, maybe even <i>barely comprehensible</i>. Fear not young traveler of the internet, you'll have to persist and trust your instinct, so you shall <b>find truth</b>! The only truth that matters, the truth to rule all other truths and bind them and <b>kill them</b>! Are you ready, are you brave? It doesn't really matter, it's just a test on the internet, you can be unfinished and <b>weak</b>, and still manage to click through a couple of questions. This text goes on and on and each word in it is less and less <b>relevant</b>. You'll learn nothing from reading the rest of it, just click the button, to learn your new name from now on! Click traveler click, your time on earth is running out, and you can no longer go one step without knowing your true and only name, <b>which you shall be known as from now on</b>.
   </p>
   <button onclick="startTest()">Find yourself</button>
 </div>
@@ -169,74 +169,79 @@ button:hover {
   <div id="resultList"></div>
 </div>
 
+
 <script>
+
 const questions = [
-      {
+
+     {
     text: "You are a ...",
     answers: [
-      { text: "Middle Child", points: { "Desperado": 2, "Bo": 1, "Dee-Jay": 1, "Frodewin": 1, "Jazz": 1, "Pfefferminza": 1, "Puhbert": 1 } },
-      { text: "Youngest Child", points: { "Blitz": 1, "Bandito": 2, "Chaotica": 1, "Knirpsi": 1, "Pepsi Carola": 1, "Störenfried": 1, "Wildchild": 2, "Satan": 1 } },
-      { text: "Eldest Child", points: { "Atomfried": 1, "Apple": 1, "Champagna": 1, "Courage": 1, "Eisenstein": 1, "Großherzog": 1, "Nekenheini": 2 } },
-      { text: "The only one", points: { "Anakin Skywalker": 1, "Axel Schweiß": 1, "Batman": 2, "Christ": 2, "Hummer": 2, "Herbstwind": 2, "Imperial Purity": 1, "Judas": 1, "Superman": 2, "König": 1, "Tarzan": 1, "Pfefferminza": 2 } },
-      { text: "Twin", points: { "Smoky": 1 } },
+      { text: "Middle Child", points: { "Axel Schweiß": 1 } },
+      { text: "Youngest Child", points: { "Bandito": 1, "Bo": 2, "Chaotica": 2, "Crazy Horse": 1, "Dee-Jay": 1, "Frodewin": 1 } },
+      { text: "Eldest Child", points: { "Courage": 1, "Doktor": 1, "Eisenstein": 1 } },
+      { text: "The only one", points: { "Anakin Skywalker": 1, "Alemmania": 1, "Batman": 2, "Christ": 2, "Colonia": 1, "Doktor": 1 } },
+      { text: "Twin", points: { "Agfa": 2, "Celle": 2 } }
     ]
   },
+
   {
   image: "vibe.png",
   answers: [
     {
       image: "image1.jpeg",
-      points: { "Bandito": 1, "Bo": 1, "Frodewin": 2, "Knirpsi": 1, "Pepsi Carola": 1, "Nelkenheini": 1, "Puhbert": 1 }
+      points: { "Bo": 1, "Frodewin": 1 }
     },
-    {
+        {
       image: "horsey.jpg",
-      points: { "Champagna": 1, "Chanel": 2, "Gucci": 1, "Winnetou": 1 }
+      points: { "Blitz": 1, "Crazy Horse": 2 }
     },
-    {
+        {
       image: "barbie.jpg",
-      points: { "Apple": 1, "Cinderella Melodie": 2 }
+      points: { "Apple": 1, "Champagna": 1, "Chanel": 1, "Cinderella Melodie": 2 }
     },
         {
       image: "beanie.jpg",
-      points: { "Anakin Skywalker": 2, "Excalibur": 1, "Grammophon": 1, "Rasputin": 1, "Smoky": 1 }
+      points: { "Bluebell": 1, "Excalibur": 1 }
     },
         {
       image: "oko.jpg",
-      points: { "Chaotica": 1 }
+      points: { "Celle": 1, "Courage": 1, "Frodewin": 1 }
     },
         {
       image: "ddr.jpg",
-      points: { "Batman": 1, "Courage": 1, "Christ": 1, "Jazz": 1, "Lenin": 2 }
+      points: { "Berlin": 2, "Fanta": 1 }
     },
         {
       image: "turtle.png",
-      points: { "Dee-Jay": 1, "Don Armani Karlheinz": 2, "Ferrari": 2, "Superman": 2, "König": 1, "Tarzan": 1 }
+      points: { "Bandito": 2, "Desperado": 2, "Don Armani Karlheinz": 2, "Ferrari": 1 }
     },
-    {
+        {
       image: "furby.jpg",
-      points: { "Don Armani Karlheinz": 2, "Nelkenheini": 1, "Satan": 1 }
+      points: { "Axel Schweiß": 1, "Bierstübl": 1 }
     },
         {
       image: "troll.png",
-      points: { "Axel Schweiß": 2, "Alemmania": 2, "Großhezog": 1, "Judas": 1, "Rasputin": 1, "Nelkenheini": 1, "Pfefferminza": 1, "Störenfried": 1, "Wildchild": 2 }
+      points: { "Borussia": 2, "Crazy Horse": 1, "Chaotica": 1 }
     },
         {
       image: "dog.jpg",
-      points: { "Anakin Skywalker": 2, "Atomfried": 2, "Desperado": 2, "Doktor": 2, "Eisenstein": 2, "Hummer": 1 }
+      points: { "Anakin Skywalker": 2, "Atomfried": 1, "Agfa": 1, "Batman": 1, "Blecherne": 2, "Doktor": 1, "Eisenstein": 1 }
     }
   ]
     },
+
           {
     text: "How do you know what you are up to this week?",
     answers: [
-      { text: "It's in my phone calendar", points: { "Apple": 2, "Chanel": 1, "Gucci": 1 } },
-      { text: "It's in my can't-live-without physical notebook", points: { "Cinderella Melodie": 1, "Pepsi Carola": 1, "Nelkenheini": 2, "Pfefferminza": 1 } },
-      { text: "My assistant will let me know", points: { "Anakin Skywalker": 1, "Batman": 1, "Doktor": 2, "König": 2, "Smoky": 1 } },
-      { text: "Mom will tell me", points: { "Bo": 1, "Frodewin": 1, "Junge": 1, "Knirpsi": 1 } },
-      { text: "My friends will tell me (hopefully in time)", points: { "Axel Schweiß": 1, "Berlin": 2, "Chaotica": 1, "Jazz": 2, "Rasputin": 1, "Pfefferminza": 1, "Puhbert": 1 } },
-      { text: "The forest will whisper it to me", points: { "Herbstwind": 1, "Tarzan": 2 } },
-      { text: "I don't have plans :D", points: { "Atomfried": 1, "Eisenstein": 1, "Pfefferminza": 2, "Wildchild": 2, "Winnetou": 1 } },
-      { text: "I don't have plans :'(", points: { "Hummer": 1, "Imperial Purity": 1, "Störenfried": 1 } }
+      { text: "It's in my phone calendar", points: { "Apple": 1, "Agfa": 1, "Blecherne": 2, "Celle": 1, "Courage": 1 } },
+      { text: "It's in my can't-live-without physical notebook", points: { "Alemmania": 1, "Cinderella Melodie": 1 } },
+      { text: "My assistant will let me know", points: { "Batman": 1, "Chanel": 1, "Champagna": 1, "Don Armani Karlheinz": 1, "Doktor": 2 } },
+      { text: "Mom will tell me", points: { "Bandito": 1, "Bo": 1, "Dee-Jay": 1 } },
+      { text: "My friends will tell me (hopefully in time)", points: { "Blitz": 1, "Berlin": 1, "Borussia": 1, "Chaotica": 1, "Desperado": 1, "Fanta": 1 } },
+      { text: "The forest will whisper it to me", points: { "Bluebell": 1, "Crazy Horse": 1 } },
+      { text: "I don't have plans :D", points: { "Atomfried": 2 } },
+      { text: "I don't have plans :'(", points: { "Axel Schweiß": 2, "Bierstübl": 1, "Eisenstein": 1 } }
     ]
   },
           {
@@ -244,75 +249,92 @@ const questions = [
     layout: "vertical",
     answers: [
       { image: "film1.jpg"
-        , points: { "Apple": 1, "Cinderella Melodie": 3, "Pepsi Carola": 1 } },
+        , points: { "Apple": 1, "Cinderella Melodie": 2 } },
       { image: "film2.jpg",
-       points: { "Bo": 1, "Dee-Jay": 1, "Frodewin": 1, "Jazz": 1, "Smoky": 1, "Winnetou": 2 } },
+       points: { "Bo": 2, "Dee-Jay": 1, "Frodewin": 2 } },
       { image: "film3.jpg",
-       points: { "Test": 1 } },
+       points: { "Bandito": 1 } },
       { image: "film4.jpg",
-       points: { "Anakin Skywalker": 1, "Batman": 1, "Doktor": 1, "Desperado": 2, "Satan": 1 } },
+       points: { "Berlin": 1, "Blecherne": 1, "Bluebell": 1, "Desperado": 1 } },
       { image: "film5.jpg",
-       points: { "Dee-Jay": 1, "Excalibur": 1, "Frodewin": 1, "Nelkenheini": 1 } },
+       points: { "Christ": 1, "Excalibur": 1, "Fanta": 2 } },
       { image: "film6.jpg",
-       points: { "Champagna": 1, "Chaotica": 2, "Pfefferminza": 1 } },
+       points: { "Test": 1 } },
       { image: "film7.jpg",
-       points: { "Anakin Skywalker": 2, "Alemmania": 1, "Batman": 1, "Don Armani Karlheinz": 1, "Superman": 1, "Tarzan": 1, "Puhbert": 1 } },
-      { image: "film8.jpg",
-       points: { "Grammophon": 1 } },
+       points: { "Bierstübl": 1, "Borussia": 2, "Celle": 1, "Eisenstein": 1, "Ferrari": 1 } },
       { image: "film9.jpg",
-       points: { "Vaginia": 1 } },
+       points: { "Courage": 2, "Champagna": 1 } },
       { image: "film10.jpg",
-       points: { "Atomfried": 1, "Batman": 2, "Desperado": 1, "Don Armani Karlheinz": 1, "Hummer": 2, "Imperial Purity": 1, "Störenfried": 1 } },
+       points: { "Anakin Skywalker": 1, "Axel Schweiß": 1, "Christ": 1 } },
       { image: "film11.jpg",
-       points: { "Blitz": 1, "Excalibur": 1, "Rasputin": 1, "Smoky": 2, "Satan": 1 } }
+       points: { "Excalibur": 2 } }
     ]
   },
     {
 text: "What is the most irritating emoji to use?",
     answers: [
-      { text: "🙈🙉🙊 - Early signs of incompetence.", points: { "König": 1, "Eisenstein": 1, "Chanel": 1 } },
-      { text: "💪 - Hollow image of the capitalist lie.", points: { "Lenin": 2, "Wildchild": 1, "Herbstwind": 1 } },
-      { text: "😉 - passive aggressiveness for people pleasers. ", points: { "Superman": 1, "Bandito": 1, "Winnetou": 1 } },
-      { text: "🤪 You aren't that degenerated yet Karen, get yourself together.", points: { "Chanel": 1 } },
-      { text: "👿 Have some respect for your lord and master Satan. ", points: { "Berlin": 1, "Satan": 2 } },
-      { text: "💩 I thought this was a civil conversation.", points: { "Courage": 1, "Champagna": 1, "Imperial Purity": 1 } },
-      { text: "👍🏼 Do you like it? Is it just okay? Are you mad? Just give me a sentence or a word at least, am I worth nothing to you?", points: { "Axel Schweiß": 1, "Cinderella Melodie": 1, "Frodewin": 1, "Puhbert": 1 } },
-      { text: "🍑 and 🍆. It gives teen magazine editors who struggle to write and article about sexting.", points: { "Vaginia": 1 } },
-      { text: "⍰", points: { "Apple": 1, "Bo": 1 } },
-      { text: "All of them. It's like the written word was invented for nothing.", points: { "Atomfried": 1, "Doktor": 1 } }
+      { text: "🙈🙉🙊 - Early signs of incompetence.", points: { "Blitz": 1, "Batman": 1, "Ferrari": 1 } },
+      { text: "💪 - Hollow image of the capitalist lie.", points: { "Courage": 1 } },
+      { text: "😉 - passive aggressiveness for people pleasers. ", points: { "Borussia": 1, "Cinderella Melodie": 1, "Eisenstein": 1, "Frodewin": 1 } },
+      { text: "🤪 You aren't that degenerated yet Karen, get yourself together.", points: { "Apple": 2, "Berlin": 2, "Chanel": 1 } },
+      { text: "👿 Have some respect for your lord and master Satan. ", points: { "Excalibur": 1 } },
+      { text: "👍🏼 Do you like it? Is it just okay? Are you mad? Just give me a sentence or a word at least, am I worth nothing to you?", points: { "Desperado": 1, "Dee-Jay": 1 } },
+      { text: "🍑 and 🍆. It gives teen magazine editors who struggle to write and article about sexting.", points: { "Champagna": 1, "Fanta": 1 } },
+      { text: "⍰", points: { "Bierstübl": 1, "Bo": 1, "Celle": 1 } },
+      { text: "All of them. It's like the written word was invented for nothing.", points: { "Atomfried": 2, "Alemmania": 2, "Colonia": 1, "Christ": 1, "Doktor": 2 } }
     ]
   },
       {
     image: "questionrich.png",
     answers: [
-      { text: "Surprise, I am a jewelry designer now.", points: { "Champagna": 1, "Cinderella Melodie": 2, "Christ": 2, "Don Armani Karlheinz": 2, "Ferrari": 1, "Gucci": 1, "Herbstwind": 1, "König": 1 } },
-      { text: "Yeah I don't know either where all this funding for these leftist groups is coming from that's crazy. ", points: { "Batman": 1, "Bandito": 1, "Superman": 1, "Lenin": 2 } },
-      { text: "I really found all these designer clothes at TKMaxx belieeeve me!", points: { "Apple": 1, "Chanel": 2 } },
-      { text: "You would know. Everyone would know. Can't keep a secret to save my life.", points: { "Axel Schweiß": 2, "Bo": 1, "Chaotica": 1, "Dee-Jay": 1, "Frodewin": 1, "Ferrari": 1, "Großherzog": 1, "Gucci": 1, "Knirpsi": 1, "Nelkenheini": 1, "Pfefferminza": 2 } },
-      { text: "That's true, there would be signs, but no sign of me, I'm outta here bitches, you'll never see me again.", points: { "Anakin Skywalker": 1, "Atomfried": 1, "Blitz": 1, "Desperado": 2, "Imperial Purity": 1, "Judas": 1, "Tarzan": 1, "Rasputin": 2, "Smoky": 1, "Wildchild": 1, "Winnetou": 1 } }
+      { text: "Surprise, I am a jewelry designer now.", points: { "Apple": 1, "Bluebell": 1, "Cinderella Melodie": 2, "Champagna": 1, "Don Armani Karlheinz": 2, "Fanta": 2 } },
+      { text: "Yeah I don't know either where all this funding for these leftist groups is coming from that's crazy. ", points: { "Berlin": 1, "Celle": 1, "Chaotica": 1, "Excalibur": 1, "Frodewin": 1 } },
+      { text: "I really found all these designer clothes at TKMaxx belieeeve me!", points: { "Blecherne": 1, "Chanel": 2 } },
+      { text: "You would know. Everyone would know. Can't keep a secret to save my life.", points: { "Axel Schweiß": 2, "Bierstübl": 2, "Bo": 1, "Dee-Jay": 1 } },
+      { text: "That's true, there would be signs, but no sign of me, I'm outta here bitches, you'll never see me again.", points: { "Anakin Skywalker": 1, "Blitz": 1, "Bandito": 2, "Borussia": 1, "Colonia": 2, "Desperado": 1, "Ferrari": 2 } }
     ]
   },
 
             {
     text: "People love to talk about their love language, but what is your coping language?",
     answers: [
-      { text: "Words of affirmation (directed to my friends, some call it complaining)", points: { "Apple": 1, "Frodewin": 1, "Nelkenheini": 2, "Judas": 1, "Störenfried": 1 } },
-      { text: "Acts of service (from a bar)", points: { "Axel Schweiß": 1, "Berlin": 1, "Champagna": 1, "Desperado": 1, "Smoky": 1 } },
-      { text: "Receiving gifts (from myself)", points: { "Cinderella Melodie": 1, "Chanel": 1, "Don Armani Karlheinz": 1, "Gucci": 1 } },
-      { text: "Quality time (away)", points: { "Batman": 2, "Bandto": 1, "Doktor": 1, "Eisenstein": 1, "Ferrari": 1, "Herbstwind": 1, "König": 1, "Lenin": 1, "Wildchild": 1, "Winnetou": 2, "Puhbert":1 } },
-      { text: "Physical touch - just kidding: denial", points: { "Atomfried": 1, "Hummer": 2 } }
+      { text: "Words of affirmation (directed to my friends, some call it complaining)", points: { "Cinderella Melodie": 1, "Dee-Jay": 1, "Frodewin": 1 } },
+      { text: "Acts of service (from a bar)", points: { "Berlin": 1, "Bierstübl": 3, "Borussia": 1, "Champagna": 1, "Christ": 1, "Desperado": 2 } },
+      { text: "Receiving gifts (from myself)", points: { "Apple": 2, "Bandito": 1, "Blecherne": 2, "Chanel": 2, "Don Armani Karlheinz": 1, "Fanta": 1 } },
+      { text: "Quality time (away)", points: { "Atomfried": 2, "Blitz": 2, "Batman": 1, "Courage": 1, "Ferrari": 2 } },
+      { text: "Physical touch - just kidding: denial", points: { "Anakin Skywalker": 1, "Axel Schweiß": 1, "Celle": 1, "Colonia": 1, "Crazy Horse": 1, "Doktor": 1, "Eisenstein": 1 } }
+    ]
+  },
+                {
+    text: "If you could turn into any animal, which one would you chosoe?",
+    answers: [
+      { text: "Horse", points: { "Apple": 1, "Crazy Horse": 2, "Cinderella Melodie": 1, "Don Armani Karlheinz": 1, "Excalibur": 1 } },
+      { text: "Lobster", points: { "Blecherne": 1, "Colonia": 1, "Celle": 2, "Champagna": 1 } },
+      { text: "Wolf", points: { "Christ": 1, "Eisenstein": 2 } },
+      { text: "Cat", points: { "Berlin": 1, "Courage": 1, "Doktor": 1 } },
+      { text: "Dolphin", points: { "Dee-Jay": 1 } },
+      { text: "Eagle", points: { "Anakin Skywalker": 1, "Alemmania": 2 } },
+      { text: "Snake", points: { "Test": 2 } },
+      { text: "Ice Bear", points: { "Bierstübl": 1 } },
+      { text: "Butterfly", points: { "Bluebell": 2 } },
+      { text: "Sea Star", points: { "Atomfried": 1, "Axel Schweiß": 1, "Fanta": 2 } },
+      { text: "Kangaroo", points: { "Chaotica": 2 } },
+      { text: "Ant-Eater", points: { "Frodewin": 1 } },
+      { text: "Bat", points: { "Batman": 2 } },
+      { text: "Squid", points: { "Agfa": 2 } },
+      { text: "Cheetah", points: { "Blitz": 2, "Bandito": 1, "Bo": 1, "Chanel": 1, "Desperado": 1, "Ferrari": 2 } }
     ]
   },
     {
     image: "questioninternet.png",
     answers: [
-      { text: "Creating personality quizzes", points: { "Apple": 1, "Cinderella Melodie": 1, "Frodewin": 1, "Herbstwind": 1, "Jazz": 1 } },
-      { text: "Being a mod on 4chan", points: { "Anakin Skywalker": 1, "Atomfried": 1, "Axel Schweiß": 1, "Alemmania": 1, "Excalibur": 1, "Eisenstein": 1, "Großherzog": 1, "Hummer": 1, "Imperial Purity": 1 } },
-      { text: "Writing Wikipedia articles", points: { "Doktor": 2, "Eisenstein": 1, "Hummer": 1, "Judas": 1, "Nelkenheini": 2 } },
-      { text: "Joining Anonymous", points: { "Batman": 1, "Bandito": 1, "Courage": 1, "Excalibur": 1, "Lenin": 1, "Tarzan": 1, "Smoky": 1, "Winnetou": 1 } },
-      { text: "Ragebaiting ppl on r/amitheasshole", points: { "Anakin Skywalker": 1, "Axel Schweiß": 1, "Blitz": 1, "Crazy Horse": 2, "Chaotica": 1, "Desperado": 1, "Don Armani Karlheinz": 1, "Ferrari": 1, "Rasputin": 1, "Störenfried": 1, "Satan": 1 } },
-      { text: "Making 2 hour long videos about the lore of Sims 2", points: { "Bo": 1, "Frodewin": 1, "Vaginia": 1, "Knirpsi": 1, "Pepsi Carola": 1 } },
-      { text: "Submitting lore for creepypastas like the backrooms wiki or be part of the SCP foundation", points: { "Excalibur": 1, "Grammophon": 1 } }
+      { text: "Creating personality quizzes", points: { "Cinderella Melodie": 1, "Champagna": 1, "Frodewin": 1 } },
+      { text: "Being a mod on 4chan", points: { "Anakin Skywalker": 2, "Alemmania": 1, "Celle": 2 } },
+      { text: "Writing Wikipedia articles", points: { "Atomfried": 1, "Colonia": 1, "Doktor": 3, "Eisenstein": 1 } },
+      { text: "Joining Anonymous", points: { "Batman": 1, "Berlin": 1, "Courage": 2 } },
+      { text: "Ragebaiting ppl on r/amitheasshole", points: { "Axel Schweiß": 2, "Borussia": 1, "Chaotica": 1, "Desperado": 1, "Ferrari": 1 } },
+      { text: "Making 2 hour long videos about the lore of Sims 2", points: { "Bo": 1, "Crazy Horse": 2 } },
+      { text: "Submitting lore for creepypastas like the backrooms wiki or be part of the SCP foundation", points: { "Agfa": 1, "Excalibur": 2, "Fanta": 1 } }
     ]
   },
 
@@ -320,69 +342,84 @@ text: "What is the most irritating emoji to use?",
     text: "Obligatory Sex and the City question:",
     answers: [
       { image: "samantha.webp",
-       points: { "Champagna": 1, "Don Armani Karlheinz": 1, "Ferrari": 1, "Gucci": 1, "Vaginia": 2, "Rasputin": 1, "Smoky": 2 } },
+       points: { "Bandito": 1, "Champagna": 2, "Don Armani Karlheinz": 1, "Ferrari": 1 } },
       { image: "miranda.webp",
-       points: { "Atomfried": 2, "Blitz": 1, "Bo": 1, "Courage": 1, "Doktor": 2, "Eisenstein": 1, "Hummer": 1 } },
+       points: { "Atomfried": 1, "Batman": 1, "Celle": 1, "Courage": 1, "Eisenstein": 1 } },
       { image: "carrie.jpg",
-        points: { "Bandito": 1, "Crazy Horse": 2, "Chaotica": 2, "Desperado": 1, "Frodewin": 1, "Herbstwind": 1, "Pepsi Carola": 2, "Pfefferminza": 2, "Störenfried": 1, "Wildchild": 1 } },
+        points: { "Blitz": 1, "Cinderella Melodie": 1, "Crazy Horse": 1, "Chaotica": 2, "Desperado": 1 } },
       { image: "charlotte.jpg",
-       points: { "Batman": 1, "Cinderella Melodie": 2, "Christ": 1, "Chanel": 1, "Imperial Purity": 2, "Nelkenheini": 1 } }
+       points: { "Apple": 2, "Bluebell": 1, "Chanel": 1 } }
     ]
   },
     {
     text: "You are not an esoteric, but there is something about...",
     answers: [
-      { text: "Tarot and Witches", points: { "Excalibur": 1, "Vaginia": 1, "Rasputin": 1, "Pepsi Carola": 1, "Satan": 1 } },
-      { text: "Astrology and Crystals", points: { "Apple": 1, "Champagna": 1, "Cinderella Melodie": 2, "Herbstwind": 1, "Rasputin": 1 } },
-      { text: "...how transcendental meditation allows students to dive in and experience the unbounded ocean of consciousness within each of us, the big treasury, the field within each of us that is the base of all matter and all mind.", points: { "Anakin Skywalker": 1, "Crazy Horse": 1, "Chaotica": 1 } },
-      { text: "The Tooth Fairy (no endorsment)", points: { "Bo": 1, "Dee-Jay": 1, "Frodewin": 1, "Knirpsi": 1, "Puhbert": 1 } },
-      { text: "...how in the 21st century the antichrist is a luddite who wants to stop all science.", points: { "Anakin Skywalker": 2, "Alemmania": 2, "Excalibur": 1, "Imperial Purity": 1, "Judas": 1 } },
-      { text: "Homeopathic medecine, they'll gonna find out how it works someday!", points: { "Chaotica": 1, "Großherzog": 1, "Tarzan": 1, "Rasputin": 1, "Pfefferminza": 2, "Wildchild": 1, "Winnetou": 1 } },
-      { text: "...the free market system distributing the fruits of economic progress among all people.", points: { "Axel Schweiß": 1, "Chanel": 1, "Don Armani Karlheinz": 1, "Eisenstein": 1, "Ferrari": 1, "Gucci": 1, "König": 1 } },
-      { text: "The transformative healing power of music", points: { "Grammophon": 1, "Jazz": 1, "Smoky": 1 } },
-      { text: "Next Question", points: { "Atomfried": 1, "Christ": 1, "Doktor": 1, "Hummer": 1, "Lenin": 1 } }
+      { text: "Tarot and Witches", points: { "Bandito": 1, "Champagna": 1, "Excalibur": 2 } },
+      { text: "Astrology and Crystals", points: { "Apple": 1, "Bluebell": 1, "Cinderella Melodie": 1 } },
+      { text: "...how transcendental meditation allows students to dive in and experience the unbounded ocean of consciousness within each of us, the big treasury, the field within each of us that is the base of all matter and all mind.", points: { "Crazy Horse": 2, "Frodewin": 1 } },
+      { text: "The Tooth Fairy (no endorsment)", points: { "Bo": 2 } },
+      { text: "...how in the 21st century the antichrist is a luddite who wants to stop all science.", points: { "Anakin Skywalker": 1, "Agfa": 1, "Christ": 1 } },
+      { text: "Homeopathic medecine, they'll gonna find out how it works someday!", points: { "Fanta": 1 } },
+      { text: "...the free market system distributing the fruits of economic progress among all people.", points: { "Blecherne": 1, "Chanel": 1, "Colonia": 2, "Don Armani Karlheinz": 2, "Ferrari": 2 } },
+      { text: "The transformative healing power of music", points: { "Berlin": 1, "Bierstübl": 1, "Borussia": 1, "Dee-Jay": 1, "Eisenstein": 1 } },
+      { text: "Next Question", points: { "Atomfried": 1, "Courage": 1, "Doktor": 2  } }
+    ]
+  },
+
+                {
+    text: "Who do you wanna call?",
+    answers: [
+      { text: "Ghostbusters!", points: { "Dee-Jay": 1, "Fanta": 1 } },
+      { text: "Your Manager", points: { "Apple": 1, "Blecherne": 1, "Chanel": 1 } },
+      { text: "The police", points: { "Axel Schweiß": 1, "Alemmania": 2, "Celle": 1, "Courage": 1, "Colonia": 1, "Christ": 1, "Eisenstein": 1 } },
+      { text: "My lawyer", points: { "Atomfried": 1, "Don Armani Karlheinz": 1, "Ferrari": 1 } },
+      { text: "A doctor, we need a doctor!", points: { "test": 1 } },
+      { text: "Mom", points: { "Batman": 1, "Bandito": 1, "Bo": 2, "Frodewin": 1 } },     
+      { text: "All that's calling to me is the wind, the sun and the rain", points: { "Blitz": 1, "Bluebell": 1, "Excalibur": 1 } },
+      { text: "My therapist", points: { "Berlin": 1, "Desperado": 1 } },       
+      { text: "The year 1971", points: { "Bierstübl": 1 } }
     ]
   },
         {
     text: "Live, Love, Laugh has been over for so long, you'd rather... ",
     answers: [
-      { text: "Die, Cry, Lie?", points: { "Batman": 1, "Bandito": 1, "Berlin": 1, "Cinderella Melodie": 1, "Excalibur": 1, "Grammophon": 1, "Satan": 1 } },
-      { text: "Sex, Vex, Hex?", points: { "Excalibur": 1, "Vaginia": 2, "Rasputin": 1, "Satan":1 } },
-      { text: "Gaslight, Gatekeep, Girlboss?", points: { "Apple": 1, "Champagna": 1, "Chanel": 1, "Gucci": 2, "Wildchild": 1 } },
-      { text: "Mansplain, Manipulate, Manslaughter?", points: { "Anakin Skywalker": 2, "Don Armani Karlheinz": 1, "Ferrari": 1, "Imperial Purity": 1, "Judas": 2, "König": 1, "Rasputin": 1, "Satan": 1 } },
-      { text: "Love, Laugh, Toaster Bath?", points: { "Axel Schweiß": 1, "Crazy Horse": 1, "Desperado": 1, "Smoky": 1 } },
-      { text: "Isolate, Ignore, Ibuprofen?", points: { "Axel Schweiß": 1, "Doktor": 1, "Eisenstein": 1 } },
-      { text: "Reduce, Reuse, Recycle?", points: { "Frodewin": 1, "Herbstwind": 2, "Pepsi Carola": 2, "Nelkenheini": 1, "Pfefferminza": 1 } },
-      { text: "See it, Say it, Sort it?", points: { "Atomfried": 1, "Courage": 1, "Superman": 2, "Puhbert": 1 } },
-      { text: "Zip Zap Zoom?", points: { "Blitz": 2, "Chaotica": 1, "Frodewin": 1, "Jazz": 1, "Knirpsi": 1, "Tarzan": 2, "Pfefferminza": 1, "Störenfried": 1 } }
+      { text: "Die, Cry, Lie?", points: { "Berlin": 1, "Bandito": 1, "Desperado": 1, "Excalibur": 2 } },
+      { text: "Sex, Vex, Hex?", points: { "Champagna": 2 } },
+      { text: "Gaslight, Gatekeep, Girlboss?", points: { "Apple": 2, "Blecherne": 1, "Chanel": 1 } },
+      { text: "Mansplain, Manipulate, Manslaughter?", points: { "Anakin Skywalker": 2, "Axel Schweiß": 1, "Alemmania": 1, "Borussia": 1, "Don Armani karlheinz": 1 } },
+      { text: "Love, Laugh, Toaster Bath?", points: { "Dee-Jay": 1 } },
+      { text: "Isolate, Ignore, Ibuprofen?", points: { "Batman": 1, "Bierstübl": 1, "Doktor": 2, "Eisenstein": 1 } },
+      { text: "Reduce, Reuse, Recycle?", points: { "Bluebell": 1, "Courage": 2, "Frodewin": 1 } },
+      { text: "See it, Say it, Sort it?", points: { "Bo": 1, "Christ": 1 } },
+      { text: "Zip Zap Zoom?", points: { "Blitz": 2, "Crazy Horse": 2, "Chaotica": 2, "Ferrari": 1, "Fanta": 1 } }
     ]
   },
 
           {
     text: "What's your Sims playing style?",
     answers: [
-      { text: "Letting my Sims die in different ways and collecting tombstones! Did you know the ghosts can have different colors?", points: { "Berlin": 1, "Crazy Horse": 1, "Doktor": 1, "Excalibur": 1, "Satan": 2 } },
-      { text: "Throwing a houseparty and remove all the doors for the Sims who don't enjoy it, guess what you'll better like my party because you'll never leave it.", points: { "Anakin Skywalker": 1, "Desperado": 1, "Jazz": 1, "Judas": 1, "Störenfried": 1 } },
-      { text: "Making out with the entire population of Pleasantville.", points: { "Berlin": 1, "Chaotica": 1, "Desperado": 1, "Wildchild": 1, "Vaginia": 2, "Rasputin": 1 } },
-      { text: "Spending hours on character creation, building the most stunning houses, download all the mods, never actually play with the Sims.", points: { "Apple": 1, "Cinderella Melodie": 1, "Gucci": 1, "König": 1, "Nelkenheini": 1 } },
-      { text: "Cheat myself to loads of money and a never ending life and live the life of the rich and famous.", points: { "Bandito": 1, "Champagna": 2, "Chanel": 1, "Dee-Jay": 1, "Don Armani Karlheinz": 2, "Ferrari": 1 } },
-      { text: "Build a tiny home, struggle to find & keep a job and stay social, you know how it's supposed to be played.", points: { "Axel Schweiß": 1, "Courage": 1, "Frodewin": 2, "Lenin": 2, "Superman": 1 } },
-      { text: "I recreate my life, my home, myself, my crush...", points: { "Bo": 1, "Herbstwind": 1, "Knirpsi": 1 } },
-      { text: "Create a dynasty to rule all over Pleasantville, step aside Goths.", points: { "Alemmania": 2, "Großherzog": 1, "Imperial Purity": 1 } },
-      { text: "I've never played the Sims", points: { "Atomfried": 1, "Christ": 1, "Eisenstein": 1, "Grammophon": 1, "Hummer": 1, "Winnetou": 1, "Tarzan": 1, "Pfefferminza": 1 } }
+      { text: "Letting my Sims die in different ways and collecting tombstones! Did you know the ghosts can have different colors?", points: { "Blitz": 1, "Berlin": 1, "Christ": 1, "Excalibur": 1, "Eisenstein": 1 } },
+      { text: "Throwing a houseparty and remove all the doors for the Sims who don't enjoy it, guess what you'll better like my party because you'll never leave it.", points: { "Borussia": 1, "Crazy Horse": 2, "Desperado": 1 } },
+      { text: "Making out with the entire population of Pleasantville.", points: { "Bluebell": 1, "Champagna": 1, "Chaotica": 2 } },
+      { text: "Spending hours on character creation, building the most stunning houses, download all the mods, never actually play with the Sims.", points: { "Atomfried": 1, "Agfa": 1, "Blecherne": 1, "Celle": 1, "Doktor": 2, "Ferrari": 1, "Fanta": 1 } },
+      { text: "Cheat myself to loads of money and a never ending life and live the life of the rich and famous.", points: { "Bandito": 2, "Chanel": 2, "Don Armani Karlheinz": 2 } },
+      { text: "Build a tiny home, struggle to find & keep a job and stay social, you know how it's supposed to be played.", points: { "Axel Schweiß": 2, "Dee-Jay": 1, "Frodewin": 1 } },
+      { text: "I recreate my life, my home, myself, my crush...", points: { "Apple": 1, "Bo": 1 } },
+      { text: "Create a dynasty to rule all over Pleasantville, step aside Goths.", points: { "Anakin Skywalker": 1, "Alemmania": 1, "Colonia": 2 } },
+      { text: "I've never played the Sims", points: { "Batman": 1, "Bierstübl": 1 } }
     ]
   },
 
     {
     text: "Which wrestling era title do you currently identify with?",
     answers: [
-      { text: "Golden Era", points: { "Axel Schweiß": 2, "Alemmania": 1, "Batman": 1, "Chanel": 1, "Grammophon": 1, "Jazz": 1, "Pfefferminza": 1, "Smoky": 2, "Winnetou": 1 } },
-      { text: "New Generation Era", points: { "Apple": 2, "Blitz": 1, "Courage": 1, "Ferrari": 1, "Tarzan": 1, "Wildchild": 1 } },
-      { text: "Ruthless Aggression Era", points: { "Atomfried": 1, "Eisenstein": 1, "Störenfried": 2, "Satan": 1 } },
-      { text: "PG Era", points: { "Bo": 1, "Dee-Jay": 1, "Frodewin": 1, "Superman": 1, "Knirpsi": 1, "Puhbert": 2 } },
-      { text: "Reality Era", points: { "Champagna": 1, "Gucci": 1 } },
-      { text: "Attitude Era", points: { "Anakin Skywalker": 1, "Bandito": 1, "Crazy Horse": 1, "Desperado": 2, "Don Armani Karlheinz": 1, "Großherzog": 1, "Judas": 1, "Vaginia": 1, "Rasputin": 2, "Pepsi Carola": 1 } },
-      { text: "Renaissance Era", points: { "Christ": 1, "Excalibur": 1, "Imperial Purity": 1, "König": 2 } }
+      { text: "Golden Era", points: { "Bierstübl": 1, "Bluebell": 1, "Don Armani Karlheinz": 1, "Fanta": 1 } },
+      { text: "New Generation Era", points: { "Agfa": 1 } },
+      { text: "Ruthless Aggression Era", points: { "Anakin Skywalker": 1, "Axel Schweiß": 1, "Blitz": 1, "Batman": 1, "Crazy Horse": 1, "Eisenstein": 1 } },
+      { text: "PG Era", points: { "Bo": 2, "Frodewin": 2 } },
+      { text: "Reality Era", points: { "Atomfried": 1, "Apple": 1, "Courage": 1, "Dee-Jay": 1, "Doktor": 1, "Ferrari": 1 } },
+      { text: "Attitude Era", points: { "Berlin": 1, "Bandito": 1, "Champagna": 1, "Desperado": 1 } },
+      { text: "Renaissance Era", points: { "Alemmania": 1, "Blecherne": 1, "Borussia": 1, "Christ": 2, "Chanel": 1, "Colonia": 1, "Celle": 1, "Excalibur": 1 } }
     ]
   },
 
@@ -390,30 +427,30 @@ text: "What is the most irritating emoji to use?",
     text: "Playing the classic 2002 video game 'Barbies Zauberhafte Pferdewelt' ('Barbie Riding Club'), how do you name your horse?",
     layout: "two-col",
     answers: [
-      { text: "*+:｡.｡-𝘉ไίť𝘻-｡.｡:+*", points: { "Anakin Skywalker": 1, "Blitz": 2, "Smoky": 2 } },
-      { text: "°🫧•𖨆٭ 𝒃ü𝒕𝒕ᶓ𝘳𝒃ʅü𐌼ᶓ꙳○𖨆°", points: { "Knirpsi": 1, "Nelkenheini": 1 } },
-      { text: "𒆜Ꮯ𝒾Ŋᖙ𝐲𒆜", points: { "Gucci": 1 } },
-      { text: "━ ᑕᥣе𝕠ῥⲁԵ𝚛ⲁ :･ﾟ✧", points: { "Gucci": 1, "Winnetou": 1 } },
-      { text: "𝔻༏ãᶬ𝘢กԵ*॰¨̮ ♡➳♡¯ツ", points: { "Berlin": 1, "Champagna": 1, "Christ": 1 } },
-      { text: "★⁂⁙ꜰ𝕖ũ𝕖ṛвส𝚕ʆ⁙⁂★", points: { "Desperado": 1, "Ferrari": 1, "Smoky": 2, "Satan": 1 } },
-      { text: "꧁⪻♥Ᏻ𝐢ѕ૯l𝒶♥⪼꧂", points: { "Atomfried": 1, "Pfefferminza": 2 } },
-      { text: "♥☁๕𝕣ä𝔣ῖŊ☁♥", points: { "Chanel": 1 } },
-      { text: "༺☆𝙃õ𝑛ԑყ☆༻", points: { "Apple": 1 } },
+      { text: "*+:｡.｡-𝘉ไίť𝘻-｡.｡:+*", sound: "Blitz.mp3", points: { "Agfa": 2, "Blitz": 2, "Excalibur": 1, "Ferrari": 1 } },
+      { text: "°🫧•𖨆٭ 𝒃ü𝒕𝒕ᶓ𝘳𝒃ʅü𐌼ᶓ꙳○𖨆°", points: { "Test": 1 } },
+      { text: "𒆜Ꮯ𝒾Ŋᖙ𝐲𒆜", points: { "Test": 1 } },
+      { text: "━ ᑕᥣе𝕠ῥⲁԵ𝚛ⲁ :･ﾟ✧", points: { "Chanel": 2, "Champagna": 1 } },
+      { text: "𝔻༏ãᶬ𝘢กԵ*॰¨̮ ♡➳♡¯ツ", points: { "Blecherne": 1 } },
+      { text: "★⁂⁙ꜰ𝕖ũ𝕖ṛвส𝚕ʆ⁙⁂★", points: { "Anakin Skywalker": 1, "Blitz": 1, "ferrari": 1 } },
+      { text: "꧁⪻♥Ᏻ𝐢ѕ૯l𝒶♥⪼꧂", points: { "Test": 1 } },
+      { text: "♥☁๕𝕣ä𝔣ῖŊ☁♥", points: { "Colonia": 2 } },
+      { text: "༺☆𝙃õ𝑛ԑყ☆༻", points: { "Bierstübl": 1, "Fanta": 1 } },
       { text: "°”𝐉ศᎦꪑϊ𝐧”°", points: { "Test": 1 } },
-      { text: "+｡:.ﾟᛖⲁĝīc\ (•◡•) /", points: { "Excalibur": 1, "Jazz": 2 } },
-      { text: "♥. * ･ ｡ﾟҎ𝔯ì𝓶ᤂ𝚟ę𝔯@. * ･ ｡ﾟ♥", points: { "Courage": 1 } },
-      { text: "꧁⪻♥𝑪𝕙ᵃṁ𝓹¡𝑜п♥⪼꧂", points: { "Superman": 1 } },
-      { text: "✿ ¦ ᴘʳïп𝘇𝖊𝔰𝔰ίп ¦", points: { "Großherzog": 1, "König": 2 } },
-      { text: "༱𝕠cкꪗ", points: { "Bo": 1, "Puhbert": 1 } },
-      { text: "☆*:.｡.𝐒𝕒ѕѕ𝘆.｡.:*☆", points: { "Vaginia": 1, "Pepsi Carola": 1, "Störenfried": 1 } },
-      { text: "✰ＳcᏥ𝗻ԑԑԲ𝗅ℴcᶄᵋ✰", points: { "Test": 1 } },
-      { text: "♦⪼᥉ĩȴɞ૯ṛ𝕡ᠻ૯ĩȴ⪻♦", points: { "Winnetou": 1 } },
-      { text: "✿┋ڳ𝗼ꪔ₥𝔢ṛ𝖜ĩƞ𝒹⠀ᥫ᭡፝֟፝֟", points: { "Cinderella Melodie": 1, "Herbstwind": 2, "Wildchild": 1 } },
-      { text: "°🫧•𖨆٭ šʈ𝐞𝚛𝐧ʈά𝑙𝐞𝚛꙳○𖨆°", points: { "Eisenstein": 1 } },
-      { text: "＊*•̩̩͙✩•̩̩͙*˚Ꭲศꫛn𝙜σ*•̩̩͙✩•̩̩͙*˚＊", points: { "Crazy Horse": 1 } },
-      { text: "❣𓊈Vศ𝚐𝗮๒𝘶ท𝕕𓊉❣", points: { "Batman": 2, "Bandito": 1, "Judas": 1, "Berlin": 1, "Rasputin": 1, "Pfefferminza": 1, "Satan": 1 } },
-      { text: "☆_♡ ○_ᵂ𝑖𝚛多𝒆ļ𝐰𝐢ɳ𝕕_○ ♡_☆", points: { "Chaotica": 2, "Tarzan": 1, "Winnetou": 1 } },
-      { text: "*•.¸♡Ⱦน𝘭𝓹𝑒♡¸.•*", points: { "Frodewin": 1, "Nelkenheini": 1 } },
+      { text: "+｡:.ﾟᛖⲁĝīc\ (•◡•) /", points: { "Dee-Jay": 2, "Excalibur": 1 } },
+      { text: "♥. * ･ ｡ﾟҎ𝔯ì𝓶ᤂ𝚟ę𝔯@. * ･ ｡ﾟ♥", points: { "Test": 1 } },
+      { text: "꧁⪻♥𝑪𝕙ᵃṁ𝓹¡𝑜п♥⪼꧂", points: { "Alemmania": 1 } },
+      { text: "✿ ¦ ᴘʳïп𝘇𝖊𝔰𝔰ίп ¦", points: { "Colonia": 1, "Frodewin": 1 } },
+      { text: "༱𝕠cкꪗ", points: { "Atomfried": 2, "Bandito": 1, "Borussia": 1, "Eisenstein": 1 } },
+      { text: "☆*:.｡.𝐒𝕒ѕѕ𝘆.｡.:*☆", points: { "Test": 1 } },
+      { text: "✰ＳcᏥ𝗻ԑԑԲ𝗅ℴcᶄᵋ✰", points: { "Berlin": 1, "Bluebell": 2, "Celle": 1 } },
+      { text: "♦⪼᥉ĩȴɞ૯ṛ𝕡ᠻ૯ĩȴ⪻♦", points: { "Test": 1 } },
+      { text: "✿┋ڳ𝗼ꪔ₥𝔢ṛ𝖜ĩƞ𝒹⠀ᥫ᭡፝֟፝֟", points: { "Cinderella Melodie": 2 } },
+      { text: "°🫧•𖨆٭ šʈ𝐞𝚛𝐧ʈά𝑙𝐞𝚛꙳○𖨆°", points: { "Christ": 1, "Excalibur": 1 } },
+      { text: "＊*•̩̩͙✩•̩̩͙*˚Ꭲศꫛn𝙜σ*•̩̩͙✩•̩̩͙*˚＊", points: { "Crazy Horse": 1, "Desperado": 1 } },
+      { text: "❣𓊈Vศ𝚐𝗮๒𝘶ท𝕕𓊉❣", points: { "Batman": 2, "Courage": 1 } },
+      { text: "☆_♡ ○_ᵂ𝑖𝚛多𝒆ļ𝐰𝐢ɳ𝕕_○ ♡_☆", points: { "Chaotica": 2 } },
+      { text: "*•.¸♡Ⱦน𝘭𝓹𝑒♡¸.•*", points: { "Test": 1 } }
     ]
   },
         {
@@ -421,44 +458,59 @@ text: "What is the most irritating emoji to use?",
     answers: [
        {
       image: "jrpgtolkien.jpg",
-      points: { "Eisenstein": 1, "Doktor": 1, "Nelkenheini": 1 }
+      points: { "Champagna": 1, "Doktor": 1 }
     },
        {
       image: "badring.jpg",
-      points: { "test": 1, "Alemmania": 1, "Bandito": 1, "Excalibur": 1, "Bandito": 2 }
+      points: { "Blecherne": 2 }
     },
        {
       image: "evileye.jpg",
-      points: { "Anakin Skywalker": 1, "Imperial Purity": 1, "Satan": 1 }
+      points: { "Anakin Skywalker": 2, "Alemmania": 2, "Colonia": 2, "Eisenstein": 1 }
     },
              {
       image: "uggs.png",
-      points: { "Großherzog": 1, "Puhbert": 1 }
+      points: { "Axel Schweiß": 2, "Borussia": 2, "Celle": 1 }
     },
              {
       image: "sneaker.png",
-      points: { "Hummer": 1, "Chaotica": 1, "Störenfried": 1 }
+      points: { "Bandito": 1  }
     },
        {
       image: "colin.png",
-      points: { "Crazy Horse": 1, "Judas": 1 }
+      points: { "Chaotica": 1, "Fanta": 1 }
     },
           {
       image: "tree.png",
-      points: { "Atomfried": 1, "Grammophon": 1, "Frodewin": 1, "Knirpsi": 1, "Tarzan": 1, "Pepsi Carola": 1, "Nelkenheini": 1, "Pfefferminza": 1 }
+      points: { "Atomfried": 1, "Bierstübl": 1, "Frodewin": 1 }
     },
        {
       image: "horse.jpg",
-      points: { "Apple": 1, "Herbstwind": 2, "Cinderella Melodie": 1, "Pepsi Carola": 1, "Pfefferminza": 1, "Wildchild": 1, "Winnetou": 2 }
+      points: { "Bluebell": 2, "Cinderella Melodie": 2, "Crazy Horse": 1, "Chanel": 1 }
     },
        {
       image: "witch.png",
-      points: { "Blitz": 1, "Batman": 1, "Berlin": 2, "Vaginia": 1, "Smoky": 1, "Satan": 1 }
+      points: { "Blitz": 1, "Berlin": 1, "Excalibur": 1 }
     },
        {
       image: "eragon.jpg",
-      points: { "Eisenstein": 1, "Ferrari": 1, "Christ": 1, "Superman": 1, "König": 2, "Nelkenheini": 1, "Smoky": 1, "Winnetou": 1 }
+      points: { "Batman": 1, "Courage": 1, "Christ": 1, "Dee-Jay": 1 }
     }
+    ]
+  },
+
+      {
+    text: "What is the best way for a song to end?",
+    answers: [
+      { text: "Classic Fade Out", points: { "Bandito": 1 } },
+      { text: "Abruptly and loud", points: { "Atomfried": 1, "Axel Schweiß": 1, "Alemmania": 2, "Blitz": 1, "Bierstübl": 1, "Blecherne": 1, "Borussia": 2, "Chaotica": 1, "Eisenstein": 1 } },
+      { text: "A capella finish", points: { "Apple": 1, "Cinderella Melodie": 1, "Frodewin": 1 } },
+      { text: "Different cool outro", points: { "Champagna": 1 } },
+      { text: "Retro vinyl stop", points: { "Agfa": 1, "Berlin": 1, "Celle": 1, "Dee-Jay": 2 } },
+      { text: "Chorus instrumental", points: { "Bluebell": 2 } },
+      { text: "With the same line it started with", points: { "Anakin Skywalker": 1, "Batman": 1, "Christ": 2, "Colonia": 1 } },
+      { text: "Going slower and slower", points: { "Test": 1 } },
+      { text: "Going faster and faster", points: { "Ferrari": 2 } }
     ]
   }
 ];
@@ -469,13 +521,19 @@ const scores = {
   "Anakin Skywalker": 0,
   "Atomfried": 0,
   "Apple": 0, 
+  "Agfa": 0, 
   "Axel Schweiß": 0,
   "Alemmania": 0,
   "Blitz": 0, 
   "Batman": 0,
   "Berlin": 0,
   "Bandito": 0,
+  "Bierstübl": 0,
+  "Blecherne": 0,
+  "Bluebell": 0,
   "Bo": 0,
+  "Borussia": 0,
+  "Celle": 0,
   "Champagna": 0,
   "Courage": 0,
   "Cinderella Melodie": 0,
@@ -483,12 +541,14 @@ const scores = {
   "Crazy Horse": 0,
   "Chanel": 0, 
   "Chaotica": 0,
+  "Colonia": 0,
   "Desperado": 0, 
   "Dee-Jay": 0,
   "Don Armani Karlheinz": 0,
   "Doktor": 0,
   "Excalibur": 0,
   "Eisenstein": 0,
+  "Fanta": 0,
   "Frodewin": 0,
   "Ferrari": 0,
   "Großherzog": 0, 
@@ -496,20 +556,38 @@ const scores = {
   "Gucci": 0,
   "Hummer": 0,
   "Herbstwind": 0,
+  "Holgerson": 0,
   "Imperial Purity": 0,
   "Jazz": 0,
+  "Joghurt": 0,
   "Judas": 0,
   "Junge": 0,
+  "Jürgenson": 0,
   "Katzbachine": 0,
   "König": 0,
   "Kaiser": 0,
+  "Kirsche": 0,
+  "Klee": 0,
+  "Kohl": 0,
   "Knirpsi": 0,
   "Kain": 0,
+  "Köln": 0,
   "Lucifer": 0,
   "Lafayette": 0,
   "Lenin": 0,
+  "Leonardo da Vinci Franz": 0,
+  "Loser": 0,
   "Matt Eagle": 0,
+  "Maier": 0,
+  "Micki Lauda": 0,
+  "Milka": 0,
+  "Megwanipi": 0,
+  "McDonald": 0,
   "Nelkenheini": 0,
+  "Nussi": 0,
+  "Nemo": 0,
+  "Ohlove": 0,
+  "Omo": 0,
   "Pain": 0,
   "Pepsi Carola": 0,
   "Puhbert": 0,
@@ -518,6 +596,11 @@ const scores = {
   "Peanut": 0,
   "Porsche": 0,
   "Puppe": 0,
+  "Popo": 0,
+  "Popcorn": 0,
+  "Pillula": 0,
+  "Prestige": 0,
+  "Pi": 0,
   "Regen": 0,
   "Regenbogen": 0,
   "Rasputin": 0, 
@@ -530,21 +613,35 @@ const scores = {
   "Sturmhard": 0,
   "Satan": 0,
   "Smoky": 0,
+  "Sputnik": 0,
+  "Sonnenschein": 0,
   "Seniorina": 0,
+  "Shaggy": 0,
+  "Shogun": 0,
+  "Smudo": 0,
+  "Schroeder": 0,
+  "Stone": 0,
   "Sonne": 0,
   "Siebenstern": 0,
   "Sexmus Ronny": 0,
   "Schnucki": 0,
   "Shaklyn": 0,
   "Tarzan": 0,
+  "Tom Tom": 0,
   "Thanatos": 0,
   "Theiler": 0,
+  "Urmel": 0,
   "Vaginia": 0,
   "Vagabund": 0,
+  "Verleihnix": 0,
   "Vom Meer": 0,
   "Wildchild": 0,
+  "Westend": 0,
+  "Whisky": 0,
   "Winnetou": 0,
   "Wildwest": 0,
+  "Waldmeister": 0,
+  "Woodstock": 0,
   "Test": 0
 };
 
@@ -567,8 +664,14 @@ const priorityNames = [
 
 
 function startTest() {
+
+  // Browser Audio freischalten
+  const unlock = new Audio();
+  unlock.play().catch(()=>{});
+
   document.getElementById("start").classList.add("hidden");
   document.getElementById("quiz").classList.remove("hidden");
+
   showQuestion();
 }
 
@@ -592,41 +695,60 @@ function showQuestion() {
 // 👉 Antworten Layout
 const hasImages = q.answers.some(a => a.image);
 
-if (hasImages) {
-  if (q.layout === "vertical") {
-    answersEl.className = "answers-vertical";
-  } else {
-    answersEl.className = "answers-grid";
-  }
-} 
+// Layout Priorität
+if (q.layout === "vertical") {
+  answersEl.className = "answers-vertical";
+}
 else if (q.layout === "two-col") {
   answersEl.className = "answers-two-col";
-} 
+}
+else if (hasImages) {
+  answersEl.className = "answers-grid";
+}
 else {
   answersEl.className = "";
 }
 
 
-  q.answers.forEach(a => {
-    if (a.image) {
-      const tile = document.createElement("div");
-      tile.className = "image-answer";
+q.answers.forEach(a => {
 
-if (q.layout === "vertical") {
-  tile.classList.add("vertical");
-}
-      tile.innerHTML = `<img src="${a.image}" alt="">`;
-      tile.onclick = () => answer(a.points);
-      answersEl.appendChild(tile);
-    } else {
-      const btn = document.createElement("button");
-      btn.textContent = a.text;
-      btn.onclick = () => answer(a.points);
-      answersEl.appendChild(btn);
+  if (a.image) {
+    const tile = document.createElement("div");
+    tile.className = "image-answer";
+
+    if (q.layout === "vertical") {
+      tile.classList.add("vertical");
     }
+
+    tile.innerHTML = `<img src="${a.image}" alt="">`;
+    tile.onclick = () => answer(a.points);
+
+    answersEl.appendChild(tile);
+  }
+
+  else {
+    const btn = document.createElement("button");
+    btn.textContent = a.text;
+
+    // 👉 Hover Sound
+if (a.sound) {
+  btn.addEventListener("mouseenter", () => {
+    const s = new Audio(a.sound);
+    s.volume = 0.8;
+    s.currentTime = 0;
+    s.play().catch(()=>{});
   });
 }
 
+    // 👉 Klick = Antwort wählen
+    btn.onclick = () => {
+      answer(a.points);
+    };
+
+    answersEl.appendChild(btn);
+  }
+
+});
 
 
 function answer(points) {
